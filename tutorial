@@ -1,0 +1,48 @@
+1. Descarga git desde: https://git-scm.com/
+2. Haz una cuenta de github: personal free
+3. Mándame tu nombre de usuario de github al chat de messenger
+4. Una vez que te notifique, ve a tu correo y acepta mi invitacion
+, luego dirigete a la carpeta en tu PC donde quieras guardar el proyecto, de preferencia vacia
+5. Da click derecho y seleccion git bash
+6. Corre los siguientes comandos:
+	git config --global user.name [tunombredeusuariodegithub]
+	git config --global user.email [tucorreodegithub]
+	git clone https://github.com/diespeso/crecimiento-urbano
+7. se habrá generado una carpeta en ese directorio, entra a ella corriendo:
+	cd crecimiento-urbano
+8. Haz los cambios que consideres necesarios al archivo de netlogo y guardalos. RECUERDA QUE CADA VEZ QUE VAYAS A USAR EL ARCHIVO DEBES
+COPIARLO A LA CARPETA TEST DEL PROYECTO QUE YA TENÍAS DESCARGADO, NO ESTE. Y CUANDO QUIERAS ENVIAR ALGO, COPIA EL DOCUMENTO DE NETLOGO A LA
+CARPETA QUE GENERÓ GIT.
+9. Una vez que tengas un avance que quieras guardar (como un checkpoint)
+o algo que quieras compartir con los demás, corre:
+	git add [archivo que quieras guardar]
+	ejemplo:
+	git add simulacion.nlogo
+	git add README.md
+	si quiere agregar todo lo que tienes en la carpeta: git add .
+10. Corre:
+	git commit -m "[Mensaje descriptivo de tu aporte]"
+11. Si quieres compartir este aporte con los demás, haz esto:
+	git push
+se pedirá tu usuario y contraseña de github.
+
+
+Caso: se me asignó un issue y quiero ir trabajando en él:
+1. abre git bash en la carpeta donde tienes el proyecto
+2. corre:
+	git branch [nombre de la nueva rama para experimentar]
+	git checkout [nombre de la nueva rama para experimentar]
+3. Haz los cambios que gusten, recuerda hacer commits cuando quieras cambiar algo que funcione para evitar echarlo a perder luego.
+4. Una vez que hayas logrado implementar la característica,
+osea, hayas resuelto tu issue, corre:
+	git checkout master
+	git pull 
+	git merge [nombre de la nueva rama para experimentar]
+5. si quieres compartir el avance con los demás, corre git push.
+
+
+Caso: alguien más hizo cambios en el repositorio y podrías usar el
+nuevo código
+	Sinceramente nunca lo he intentado, encontré un tutorial:
+	https://gist.github.com/santisbon/a1a60db1fb8eecd1beeacd986ae5d3ca
+	
